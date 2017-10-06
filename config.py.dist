@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct  6 17:19:54 2017
+
+@author: joshuastuve
+"""
+
+#Twillio
+account_sid = "[ACCOUNT_SID]" #Account SID from twilio.com/console
+auth_token  = "[AUTH_TOKEN]" #Auth Token from twilio.com/console
+James_number = "+15553334444" #Twillio Number [String]
+Master_number = "+12228880000" #Sender Number [String]
