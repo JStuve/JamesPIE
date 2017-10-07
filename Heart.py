@@ -20,11 +20,9 @@ app = Flask(__name__)
 @app.route('/sms', methods=['POST'])
 
 def sms():
-    message = request.form['Body']
+    resp = MessagingResponse()
     
-    resp = twiml.Response()
     resp.message('Hello, Josh!')
-    
     return str(resp)
 
 def sendSMS():
