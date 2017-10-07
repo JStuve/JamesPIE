@@ -6,8 +6,13 @@ Created on Fri Oct  6 18:39:20 2017
 @author: joshuastuve
 """
 
+import config
 from wakeonlan import wol
 
-def WakeUpComputer(macAddy):
-    print("Waking up computer...")
-    wol.send_magic_packet(macAddy)
+''' Needs to return message for user '''
+def WakeUpComputer():
+    try:
+        wol.send_magic_packet(config.BlackBeauty)
+        return( config.name + ", I have awoken " + config.CompName + ".")
+    except:
+        return( config.name + ", there was an issue processing WoL.. Sorry.")
